@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
+import CursorFlowers from './components/CursorFlowers'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Archive from './pages/Archive'
@@ -35,6 +36,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <CursorFlowers />
         <Header theme={theme} font={font} toggleTheme={toggleTheme} toggleFont={toggleFont} />
         <main className="main-content">
           <Routes>
