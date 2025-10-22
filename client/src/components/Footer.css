@@ -1,0 +1,30 @@
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+.footer-info a {
+  color: var(--text-secondary);
+}
+
+.footer-info a:hover {
+  color: var(--accent);
+}
+
+.footer-tech {
+  margin-top: 1rem;
+}
+

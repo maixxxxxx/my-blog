@@ -1,0 +1,95 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "欢迎来到我的博客",
+      "content": "# 欢迎来到我的博客\n\n这是第一篇文章，欢迎访问我的个人博客！\n\n## 关于这个博客\n\n这个博客使用 React + Node.js 构建，具有以下特性：\n\n- 📝 支持 Markdown 写作\n- 🌓 支持暗色模式\n- 💬 支持评论功能\n- 📱 响应式设计\n- ⚡ 快速加载\n\n## 未来计划\n\n- 添加文章搜索功能\n- 添加标签云\n- 优化 SEO\n- 添加 RSS 订阅\n\n期待与你在这里相遇！",
+      "excerpt": "这是第一篇文章，欢迎访问我的个人博客！介绍了博客的特性和未来计划。",
+      "category": "日常",
+      "tags": [
+        "博客",
+        "建站"
+      ],
+      "date": "2025-10-17T00:00:00.000Z",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "React开发技巧分享",
+      "content": "# React开发技巧分享\n\n在日常的 React 开发中，我总结了一些实用的技巧。\n\n## 1. 使用自定义 Hooks\n\n自定义 Hooks 可以让你的代码更加模块化和可复用。\n\n```javascript\nfunction useLocalStorage(key, initialValue) {\n  const [value, setValue] = useState(() => {\n    const item = localStorage.getItem(key)\n    return item ? JSON.parse(item) : initialValue\n  })\n  \n  useEffect(() => {\n    localStorage.setItem(key, JSON.stringify(value))\n  }, [key, value])\n  \n  return [value, setValue]\n}\n```\n\n## 2. 使用 React.memo 优化性能\n\n对于不经常变化的组件，使用 React.memo 可以避免不必要的重渲染。\n\n```javascript\nconst MyComponent = React.memo(({ data }) => {\n  return <div>{data}</div>\n})\n```\n\n## 3. 使用 Context 管理全局状态\n\n对于需要跨多个组件共享的状态，Context 是一个很好的选择。\n\n希望这些技巧对你有帮助！",
+      "excerpt": "分享了一些实用的 React 开发技巧，包括自定义 Hooks、性能优化和状态管理。",
+      "category": "技术",
+      "tags": [
+        "React",
+        "前端",
+        "JavaScript"
+      ],
+      "date": "2025-10-16T00:00:00.000Z",
+      "views": 256
+    },
+    {
+      "id": "3",
+      "title": "我的学习方法",
+      "content": "# 我的学习方法\n\n最近有朋友问我是如何学习新技术的，今天就分享一下我的学习方法。\n\n## 1. 明确学习目标\n\n在开始学习之前，先问自己：\n- 为什么要学这个？\n- 学完之后要达到什么程度？\n- 需要多长时间？\n\n## 2. 理论与实践结合\n\n不要只看教程，一定要动手实践：\n- 跟着教程敲代码\n- 尝试修改示例\n- 做一个小项目\n\n## 3. 记录和总结\n\n- 写学习笔记\n- 记录遇到的问题和解决方案\n- 定期回顾\n\n## 4. 加入社区\n\n- 参与开源项目\n- 在论坛提问和回答问题\n- 关注技术博客\n\n学习是一个持续的过程，保持好奇心和耐心！",
+      "excerpt": "分享了我的技术学习方法，包括设定目标、理论实践结合、记录总结和参与社区。",
+      "category": "学习",
+      "tags": [
+        "学习方法",
+        "个人成长"
+      ],
+      "date": "2025-10-15T00:00:00.000Z",
+      "views": 189
+    }
+  ],
+  "comments": [
+    {
+      "id": "c1",
+      "postId": "1",
+      "name": "张三",
+      "content": "博客很漂亮，期待更多文章！",
+      "date": "2025-10-17T10:30:00.000Z"
+    },
+    {
+      "id": "c2",
+      "postId": "2",
+      "name": "李四",
+      "content": "这些 React 技巧很实用，感谢分享！",
+      "date": "2025-10-16T15:20:00.000Z"
+    }
+  ],
+  "guestbook": [
+    {
+      "id": "g1",
+      "name": "访客",
+      "content": "第一次来访，网站做得不错！",
+      "date": "2025-10-17T09:00:00.000Z"
+    },
+    {
+      "id": "g2",
+      "name": "路人甲",
+      "content": "支持博主，多更新文章哦~",
+      "date": "2025-10-16T14:30:00.000Z"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t1",
+      "title": "博客上线",
+      "description": "个人博客正式上线，开始记录生活和技术",
+      "date": "2025-10-17T00:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "title": "学习React",
+      "description": "开始系统学习 React 框架",
+      "date": "2025-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "title": "加入开源社区",
+      "description": "开始参与开源项目，提交了第一个 PR",
+      "date": "2025-08-15T00:00:00.000Z"
+    }
+  ],
+  "categories": []
+}
